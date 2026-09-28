@@ -1,0 +1,6 @@
+{
+  "name": "Kevin C - Salon de Coiffure à Lognes",
+  "description": "Salon de coiffure à Lognes (77185) depuis près de 30 ans. Coupes homme, femme, enfant, coiffure africaine, colorations et coiffure mariage au 1 Cours des Lacs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #1a1918;
+    background-color: #faf9f6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, Cambria, 'Times New Roman', Times, serif;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    background-color: #ede5da;
+    color: #171513;
+  }
+}
+
+/* Hairdressing Shear Micro-Animation */
+@keyframes shear-snip {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-18deg);
+  }
+  60% {
+    transform: rotate(4deg);
+  }
+}
+
+/* Organic Hair Wave Motion */
+@keyframes hair-wave {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0.6deg);
+  }
+}
+
+/* Hair Sheen Reflection */
+@keyframes hair-sheen {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  50%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.animate-shear {
+  animation: shear-snip 2.6s ease-in-out infinite;
+}
+
+.animate-hair-wave {
+  animation: hair-wave 7s ease-in-out infinite;
+}
+
+.hair-sheen-sweep {
+  animation: hair-sheen 6s infinite ease-in-out;
+}
+
+/* Stylist Slanted & Editorial Geometric Helpers - Optimized, Razor Crisp */
+.tilt-card-left {
+  transform: rotate(-1.2deg);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.tilt-card-right {
+  transform: rotate(1.2deg);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.tilt-subtle {
+  transform: rotate(-0.8deg);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  backface-visibility: hidden;
+}
+
+.tilt-card-left:hover,
+.tilt-card-right:hover,
+.tilt-subtle:hover {
+  transform: rotate(0deg) translateY(-3px);
+}
+
+/* Razor parting line angle (de travers mais optimisé et propre) */
+.diagonal-cut-bottom {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2.2vw), 0 100%);
+}
+
+.diagonal-cut-top {
+  clip-path: polygon(0 2.2vw, 100% 0, 100% 100%, 0 100%);
+}
